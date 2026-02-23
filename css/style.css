@@ -670,8 +670,8 @@ img { max-width: 100%; }
 
 .leaders-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .leader-column {
@@ -741,7 +741,7 @@ img { max-width: 100%; }
   font-family: 'Righteous', cursive;
   font-size: 1.4rem;
   color: var(--red);
-  min-width: 50px;
+  min-width: 40px;
   text-align: right;
 }
 
@@ -850,5 +850,5 @@ img { max-width: 100%; }
 
   .teams-grid { grid-template-columns: 1fr; }
   .awards-grid { grid-template-columns: 1fr; }
-  .leaders-grid { grid-template-columns: 1fr; }
+  .leaders-grid { grid-template-columns: repeat(2, 1fr); }
 }
