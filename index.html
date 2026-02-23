@@ -55,6 +55,13 @@
         return { player: p, totals: allStats[i].totals, avg };
       }).filter(d => d.totals.gp > 0);
 
+      // Calculate fantasy points per game for each player
+      playerData.forEach(d => {
+        const t = d.totals;
+        const totalFP = t.pts * 1 + t.reb * 1.2 + t.ast * 1.5 + t.stl * 3 + t.blk * 3 + t.to * -1;
+        d.avg.fppg = (totalFP / t.gp).toFixed(1);
+      });
+
       function renderLeaderList(title, statKey, label) {
         const sorted = [...playerData].sort((a, b) => parseFloat(b.avg[statKey]) - parseFloat(a.avg[statKey]));
         const top5 = sorted.slice(0, 5);
@@ -80,7 +87,8 @@
       document.getElementById('leaders-grid').innerHTML =
         renderLeaderList('Points', 'ppg', 'PPG') +
         renderLeaderList('Rebounds', 'rpg', 'RPG') +
-        renderLeaderList('Assists', 'apg', 'APG');
+        renderLeaderList('Assists', 'apg', 'APG') +
+        renderLeaderList('Fantasy', 'fppg', 'FPPG');
 
       // Show last 6 games
       const recent = games.slice(-6).reverse();
