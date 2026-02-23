@@ -670,8 +670,10 @@ img { max-width: 100%; }
 
 .leaders-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .leader-column {
