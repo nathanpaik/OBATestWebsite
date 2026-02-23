@@ -1,0 +1,130 @@
+// OBA Data Loading Utilities
+const OBA = {
+  currentSeason: 'season2',
+  cache: {},
+
+  async fetchJSON(path) {
+    if (this.cache[path]) return this.cache[path];
+    const res = await fetch(path);
+    const data = await res.json();
+    this.cache[path] = data;
+    return data;
+  },
+
+  async getTeams() {
+    return this.fetchJSON('data/teams.json');
+  },
+
+  async getPlayers() {
+    return this.fetchJSON('data/players.json');
+  },
+
+  async getGames(season) {
+    season = season || this.currentSeason;
+    return this.fetchJSON(`data/seasons/${season}/games.json`);
+  },
+
+  async getAwards(season) {
+    season = season || this.currentSeason;
+    return this.fetchJSON(`data/seasons/${season}/awards.json`);
+  },
+
+  async getTeam(teamId) {
+    const teams = await this.getTeams();
+    return teams.find(t => t.id === teamId);
+  },
+
+  async getPlayer(playerId) {
+    const players = await this.getPlayers();
+    return players.find(p => p.id === playerId);
+  },
+
+  async getTeamPlayers(teamId) {
+    const players = await this.getPlayers();
+    return players.filter(p => p.teamId === teamId);
+  },
+
+  async getTeamRecord(teamId, season) {
+    const games = await this.getGames(season);
+    let wins = 0, losses = 0;
+    games.forEach(g => {
+      if (g.homeTeam === teamId) {
+        g.homeScore > g.awayScore ? wins++ : losses++;
+      } else if (g.awayTeam === teamId) {
+        g.awayScore > g.homeScore ? wins++ : losses++;
+      }
+    });
+    return { wins, losses };
+  },
+
+  async getPlayerSeasonStats(playerId, season) {
+    const games = await this.getGames(season);
+    const stats = { gp: 0, pts: 0, reb: 0, ast: 0, stl: 0, blk: 0, to: 0, fgm: 0, fga: 0, tpm: 0, tpa: 0, ftm: 0, fta: 0 };
+    const gameLogs = [];
+
+    games.forEach(g => {
+      const allBoxScores = Object.values(g.boxScore).flat();
+      const line = allBoxScores.find(b => b.playerId === playerId);
+      if (line) {
+        stats.gp++;
+        Object.keys(stats).forEach(k => {
+          if (k !== 'gp') stats[k] += line[k] || 0;
+        });
+        gameLogs.push({ gameId: g.id, date: g.date, homeTeam: g.homeTeam, awayTeam: g.awayTeam, homeScore: g.homeScore, awayScore: g.awayScore, ...line });
+      }
+    });
+
+    return { totals: stats, gameLogs };
+  },
+
+  calcAverages(totals) {
+    const gp = totals.gp || 1;
+    return {
+      ppg: (totals.pts / gp).toFixed(1),
+      rpg: (totals.reb / gp).toFixed(1),
+      apg: (totals.ast / gp).toFixed(1),
+      spg: (totals.stl / gp).toFixed(1),
+      bpg: (totals.blk / gp).toFixed(1),
+      topg: (totals.to / gp).toFixed(1),
+      fgPct: totals.fga ? (totals.fgm / totals.fga * 100).toFixed(1) : '0.0',
+      tpPct: totals.tpa ? (totals.tpm / totals.tpa * 100).toFixed(1) : '0.0',
+      ftPct: totals.fta ? (totals.ftm / totals.fta * 100).toFixed(1) : '0.0',
+    };
+  },
+
+  formatDate(dateStr) {
+    const d = new Date(dateStr + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  },
+
+  getParam(name) {
+    return new URLSearchParams(window.location.search).get(name);
+  },
+
+  // Build shared navigation HTML
+  renderNav(activePage) {
+    const links = [
+      { href: 'index.html', label: 'Home', id: 'home' },
+      { href: 'schedule.html', label: 'Schedule', id: 'schedule' },
+      { href: 'teams.html', label: 'Teams', id: 'teams' },
+      { href: 'awards.html', label: 'Awards', id: 'awards' },
+    ];
+    const nav = document.getElementById('site-nav');
+    if (!nav) return;
+    nav.innerHTML = `
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">OBA</a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <ul class="nav-links">
+          ${links.map(l => `<li><a href="${l.href}" class="${activePage === l.id ? 'active' : ''}">${l.label}</a></li>`).join('')}
+        </ul>
+      </div>
+    `;
+  },
+
+  renderFooter() {
+    const footer = document.getElementById('site-footer');
+    if (!footer) return;
+    footer.innerHTML = `<p>&copy; ${new Date().getFullYear()} Ordinary Basketball Association &mdash; A Church Basketball League</p>`;
+  }
+};

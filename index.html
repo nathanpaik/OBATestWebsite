@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBA - Ordinary Basketball Association</title>
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body class="checkerboard-bg">
+  <nav class="site-nav" id="site-nav"></nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="neon-text">Ordinary Basketball Association</h1>
+      <p class="subtitle">A Church Basketball League</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="quick-links">
+      <a href="schedule.html" class="quick-link">Schedule</a>
+      <a href="teams.html" class="quick-link">Teams</a>
+      <a href="awards.html" class="quick-link">Awards</a>
+    </div>
+
+    <section class="league-leaders">
+      <h2 class="section-title">League Leaders</h2>
+      <div class="leaders-grid" id="leaders-grid">
+        <p class="loading">Loading leaders...</p>
+      </div>
+    </section>
+
+    <section class="latest-games">
+      <h2 class="section-title">Latest Games</h2>
+      <div class="schedule-list" id="latest-games">
+        <p class="loading">Loading games...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/data.js?v=3"></script>
+  <script>
+    (async function() {
+      OBA.renderNav('home');
+      OBA.renderFooter();
+
+      const [games, teams, players] = await Promise.all([OBA.getGames(), OBA.getTeams(), OBA.getPlayers()]);
+      const teamMap = Object.fromEntries(teams.map(t => [t.id, t]));
+
+      // League Leaders
+      const allStats = await Promise.all(players.map(p => OBA.getPlayerSeasonStats(p.id)));
+      const playerData = players.map((p, i) => {
+        const avg = OBA.calcAverages(allStats[i].totals);
+        return { player: p, totals: allStats[i].totals, avg };
+      }).filter(d => d.totals.gp > 0);
+
+      function renderLeaderList(title, statKey, label) {
+        const sorted = [...playerData].sort((a, b) => parseFloat(b.avg[statKey]) - parseFloat(a.avg[statKey]));
+        const top5 = sorted.slice(0, 5);
+        return `
+          <div class="leader-column">
+            <h3 class="leader-title">${title}</h3>
+            <ol class="leader-list">
+              ${top5.map((d, i) => {
+                const team = teamMap[d.player.teamId];
+                return `<li class="leader-item">
+                  <span class="leader-rank">${i + 1}</span>
+                  <div class="leader-info">
+                    <a href="player.html?id=${d.player.id}" class="leader-name">${d.player.name}</a>
+                    <span class="leader-team" style="color:${team.color}">${team.name}</span>
+                  </div>
+                  <span class="leader-stat">${d.avg[statKey]}</span>
+                </li>`;
+              }).join('')}
+            </ol>
+          </div>`;
+      }
+
+      document.getElementById('leaders-grid').innerHTML =
+        renderLeaderList('Points', 'ppg', 'PPG') +
+        renderLeaderList('Rebounds', 'rpg', 'RPG') +
+        renderLeaderList('Assists', 'apg', 'APG');
+
+      // Show last 6 games
+      const recent = games.slice(-6).reverse();
+      const container = document.getElementById('latest-games');
+
+      if (recent.length === 0) {
+        container.innerHTML = '<p class="loading">No games yet this season.</p>';
+        return;
+      }
+
+      container.innerHTML = recent.map(g => {
+        const home = teamMap[g.homeTeam];
+        const away = teamMap[g.awayTeam];
+        const homeWin = g.homeScore > g.awayScore;
+        return `
+          <a href="game.html?id=${g.id}" class="game-row">
+            <span class="game-date">${OBA.formatDate(g.date)}</span>
+            <span class="game-matchup">
+              <span class="team-name home-team" style="color:${home.color}">${home.name}</span>
+              <span class="vs">vs</span>
+              <span class="team-name away-team" style="color:${away.color}">${away.name}</span>
+            </span>
+            <span class="game-score">
+              <span class="${homeWin ? 'winner' : ''}">${g.homeScore}</span> - <span class="${!homeWin ? 'winner' : ''}">${g.awayScore}</span>
+            </span>
+          </a>`;
+      }).join('');
+    })();
+  </script>
+</body>
+</html>

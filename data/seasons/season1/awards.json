@@ -1,0 +1,7 @@
+{
+  "mvp": { "playerId": "p9", "highlights": "Led the league in scoring with 25.0 PPG and 8.5 APG" },
+  "sixthMan": { "playerId": "p6", "highlights": "Key spark off the bench for the Saints, averaging 4.0 PPG in limited minutes" },
+  "mip": { "playerId": "p18", "highlights": "Became a dominant scorer, averaging 23.0 PPG with elite 3-point shooting" },
+  "allOBA": ["p9", "p18", "p3", "p25", "p42"],
+  "allDefense": ["p5", "p21", "p20", "p29", "p37"]
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "week": 1,
+    "date": "2025-01-11",
+    "homeTeam": "saints",
+    "awayTeam": "disciples",
+    "homeScore": 78,
+    "awayScore": 72,
+    "boxScore": {
+      "saints": [
+        { "playerId": "p1", "min": 32, "pts": 18, "reb": 3, "ast": 7, "stl": 2, "blk": 0, "to": 3, "fgm": 7, "fga": 14, "tpm": 2, "tpa": 5, "ftm": 2, "fta": 2 },
+        { "playerId": "p2", "min": 28, "pts": 14, "reb": 2, "ast": 2, "stl": 1, "blk": 0, "to": 1, "fgm": 5, "fga": 11, "tpm": 3, "tpa": 6, "ftm": 1, "fta": 2 },
+        { "playerId": "p3", "min": 30, "pts": 20, "reb": 6, "ast": 3, "stl": 1, "blk": 1, "to": 2, "fgm": 8, "fga": 15, "tpm": 2, "tpa": 4, "ftm": 2, "fta": 3 },
+        { "playerId": "p4", "min": 26, "pts": 12, "reb": 8, "ast": 1, "stl": 0, "blk": 2, "to": 1, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 2 },
+        { "playerId": "p5", "min": 24, "pts": 8, "reb": 10, "ast": 1, "stl": 0, "blk": 3, "to": 2, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 1 },
+        { "playerId": "p6", "min": 18, "pts": 4, "reb": 1, "ast": 2, "stl": 1, "blk": 0, "to": 0, "fgm": 2, "fga": 5, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p7", "min": 14, "pts": 2, "reb": 3, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p8", "min": 8,  "pts": 0, "reb": 2, "ast": 0, "stl": 0, "blk": 1, "to": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ],
+      "disciples": [
+        { "playerId": "p9",  "min": 34, "pts": 22, "reb": 4, "ast": 8, "stl": 3, "blk": 0, "to": 4, "fgm": 9, "fga": 18, "tpm": 2, "tpa": 6, "ftm": 2, "fta": 3 },
+        { "playerId": "p10", "min": 30, "pts": 16, "reb": 3, "ast": 2, "stl": 1, "blk": 0, "to": 2, "fgm": 6, "fga": 13, "tpm": 3, "tpa": 7, "ftm": 1, "fta": 1 },
+        { "playerId": "p11", "min": 28, "pts": 12, "reb": 5, "ast": 2, "stl": 0, "blk": 1, "to": 1, "fgm": 5, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p12", "min": 24, "pts": 10, "reb": 7, "ast": 1, "stl": 0, "blk": 1, "to": 2, "fgm": 4, "fga": 9, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 4 },
+        { "playerId": "p13", "min": 22, "pts": 6, "reb": 9, "ast": 0, "stl": 0, "blk": 2, "to": 1, "fgm": 3, "fga": 7, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 },
+        { "playerId": "p14", "min": 16, "pts": 4, "reb": 1, "ast": 3, "stl": 1, "blk": 0, "to": 1, "fgm": 2, "fga": 5, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p15", "min": 14, "pts": 2, "reb": 1, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p16", "min": 12, "pts": 0, "reb": 3, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 0, "fga": 3, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "week": 1,
+    "date": "2025-01-11",
+    "homeTeam": "shepherds",
+    "awayTeam": "lions",
+    "homeScore": 85,
+    "awayScore": 80,
+    "boxScore": {
+      "shepherds": [
+        { "playerId": "p17", "min": 34, "pts": 15, "reb": 4, "ast": 10, "stl": 3, "blk": 0, "to": 3, "fgm": 6, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 2, "fta": 2 },
+        { "playerId": "p18", "min": 30, "pts": 22, "reb": 3, "ast": 2, "stl": 1, "blk": 0, "to": 1, "fgm": 8, "fga": 15, "tpm": 4, "tpa": 8, "ftm": 2, "fta": 2 },
+        { "playerId": "p19", "min": 28, "pts": 16, "reb": 7, "ast": 3, "stl": 1, "blk": 1, "to": 2, "fgm": 7, "fga": 14, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p20", "min": 26, "pts": 14, "reb": 9, "ast": 1, "stl": 0, "blk": 3, "to": 1, "fgm": 6, "fga": 11, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 3 },
+        { "playerId": "p21", "min": 24, "pts": 10, "reb": 11, "ast": 2, "stl": 1, "blk": 2, "to": 2, "fgm": 5, "fga": 9, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 1 },
+        { "playerId": "p22", "min": 16, "pts": 6, "reb": 1, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 2, "fga": 5, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p23", "min": 14, "pts": 2, "reb": 2, "ast": 1, "stl": 1, "blk": 0, "to": 1, "fgm": 1, "fga": 3, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p24", "min": 8,  "pts": 0, "reb": 3, "ast": 0, "stl": 0, "blk": 1, "to": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ],
+      "lions": [
+        { "playerId": "p25", "min": 32, "pts": 20, "reb": 3, "ast": 6, "stl": 2, "blk": 0, "to": 4, "fgm": 8, "fga": 16, "tpm": 2, "tpa": 5, "ftm": 2, "fta": 3 },
+        { "playerId": "p26", "min": 30, "pts": 18, "reb": 4, "ast": 3, "stl": 1, "blk": 0, "to": 2, "fgm": 7, "fga": 14, "tpm": 3, "tpa": 6, "ftm": 1, "fta": 1 },
+        { "playerId": "p27", "min": 28, "pts": 14, "reb": 6, "ast": 2, "stl": 0, "blk": 1, "to": 1, "fgm": 6, "fga": 13, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p28", "min": 24, "pts": 12, "reb": 8, "ast": 1, "stl": 1, "blk": 2, "to": 2, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 3 },
+        { "playerId": "p29", "min": 22, "pts": 8, "reb": 10, "ast": 1, "stl": 0, "blk": 3, "to": 1, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 },
+        { "playerId": "p30", "min": 16, "pts": 6, "reb": 2, "ast": 1, "stl": 1, "blk": 0, "to": 1, "fgm": 3, "fga": 6, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p31", "min": 14, "pts": 2, "reb": 2, "ast": 0, "stl": 0, "blk": 0, "to": 0, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p32", "min": 14, "pts": 0, "reb": 3, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 0, "fga": 3, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "week": 1,
+    "date": "2025-01-11",
+    "homeTeam": "eagles",
+    "awayTeam": "kings",
+    "homeScore": 70,
+    "awayScore": 74,
+    "boxScore": {
+      "eagles": [
+        { "playerId": "p33", "min": 32, "pts": 14, "reb": 3, "ast": 6, "stl": 2, "blk": 0, "to": 3, "fgm": 5, "fga": 12, "tpm": 2, "tpa": 5, "ftm": 2, "fta": 3 },
+        { "playerId": "p34", "min": 28, "pts": 16, "reb": 4, "ast": 2, "stl": 1, "blk": 0, "to": 2, "fgm": 6, "fga": 14, "tpm": 3, "tpa": 7, "ftm": 1, "fta": 1 },
+        { "playerId": "p35", "min": 26, "pts": 12, "reb": 5, "ast": 1, "stl": 0, "blk": 1, "to": 1, "fgm": 5, "fga": 11, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p36", "min": 24, "pts": 10, "reb": 7, "ast": 1, "stl": 0, "blk": 2, "to": 2, "fgm": 4, "fga": 9, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 2 },
+        { "playerId": "p37", "min": 22, "pts": 8, "reb": 9, "ast": 0, "stl": 0, "blk": 2, "to": 1, "fgm": 3, "fga": 7, "tpm": 0, "tpa": 0, "ftm": 2, "fta": 3 },
+        { "playerId": "p38", "min": 16, "pts": 6, "reb": 1, "ast": 3, "stl": 1, "blk": 0, "to": 1, "fgm": 3, "fga": 6, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p39", "min": 14, "pts": 4, "reb": 2, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 2, "fga": 5, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p40", "min": 18, "pts": 0, "reb": 4, "ast": 0, "stl": 0, "blk": 1, "to": 1, "fgm": 0, "fga": 3, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ],
+      "kings": [
+        { "playerId": "p41", "min": 34, "pts": 16, "reb": 3, "ast": 9, "stl": 2, "blk": 0, "to": 3, "fgm": 6, "fga": 13, "tpm": 2, "tpa": 5, "ftm": 2, "fta": 2 },
+        { "playerId": "p42", "min": 30, "pts": 20, "reb": 4, "ast": 3, "stl": 2, "blk": 0, "to": 2, "fgm": 8, "fga": 15, "tpm": 3, "tpa": 6, "ftm": 1, "fta": 2 },
+        { "playerId": "p43", "min": 26, "pts": 14, "reb": 5, "ast": 2, "stl": 1, "blk": 1, "to": 1, "fgm": 6, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 1 },
+        { "playerId": "p44", "min": 24, "pts": 10, "reb": 8, "ast": 1, "stl": 0, "blk": 2, "to": 2, "fgm": 4, "fga": 9, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 3 },
+        { "playerId": "p45", "min": 22, "pts": 8, "reb": 10, "ast": 1, "stl": 0, "blk": 3, "to": 1, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 1 },
+        { "playerId": "p46", "min": 16, "pts": 4, "reb": 1, "ast": 1, "stl": 1, "blk": 0, "to": 0, "fgm": 2, "fga": 5, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p47", "min": 14, "pts": 2, "reb": 3, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 3, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p48", "min": 14, "pts": 0, "reb": 2, "ast": 0, "stl": 0, "blk": 0, "to": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "week": 2,
+    "date": "2025-01-18",
+    "homeTeam": "saints",
+    "awayTeam": "lions",
+    "homeScore": 82,
+    "awayScore": 76,
+    "boxScore": {
+      "saints": [
+        { "playerId": "p1", "min": 34, "pts": 22, "reb": 4, "ast": 8, "stl": 3, "blk": 0, "to": 2, "fgm": 9, "fga": 17, "tpm": 2, "tpa": 5, "ftm": 2, "fta": 3 },
+        { "playerId": "p2", "min": 30, "pts": 18, "reb": 3, "ast": 3, "stl": 1, "blk": 0, "to": 1, "fgm": 7, "fga": 13, "tpm": 3, "tpa": 6, "ftm": 1, "fta": 1 },
+        { "playerId": "p3", "min": 28, "pts": 16, "reb": 5, "ast": 2, "stl": 0, "blk": 2, "to": 2, "fgm": 7, "fga": 14, "tpm": 1, "tpa": 4, "ftm": 1, "fta": 2 },
+        { "playerId": "p4", "min": 26, "pts": 14, "reb": 10, "ast": 2, "stl": 1, "blk": 1, "to": 1, "fgm": 6, "fga": 11, "tpm": 0, "tpa": 0, "ftm": 2, "fta": 3 },
+        { "playerId": "p5", "min": 22, "pts": 6, "reb": 8, "ast": 0, "stl": 0, "blk": 2, "to": 2, "fgm": 3, "fga": 7, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 },
+        { "playerId": "p6", "min": 16, "pts": 4, "reb": 1, "ast": 1, "stl": 1, "blk": 0, "to": 0, "fgm": 2, "fga": 4, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p7", "min": 14, "pts": 2, "reb": 2, "ast": 1, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 3, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p8", "min": 10, "pts": 0, "reb": 3, "ast": 0, "stl": 0, "blk": 1, "to": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ],
+      "lions": [
+        { "playerId": "p25", "min": 34, "pts": 24, "reb": 4, "ast": 7, "stl": 2, "blk": 0, "to": 5, "fgm": 10, "fga": 20, "tpm": 2, "tpa": 6, "ftm": 2, "fta": 3 },
+        { "playerId": "p26", "min": 30, "pts": 16, "reb": 3, "ast": 2, "stl": 1, "blk": 0, "to": 1, "fgm": 6, "fga": 13, "tpm": 3, "tpa": 7, "ftm": 1, "fta": 2 },
+        { "playerId": "p27", "min": 28, "pts": 14, "reb": 5, "ast": 2, "stl": 1, "blk": 0, "to": 2, "fgm": 6, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 1 },
+        { "playerId": "p28", "min": 24, "pts": 10, "reb": 7, "ast": 1, "stl": 0, "blk": 1, "to": 1, "fgm": 4, "fga": 9, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 4 },
+        { "playerId": "p29", "min": 22, "pts": 6, "reb": 9, "ast": 0, "stl": 0, "blk": 2, "to": 1, "fgm": 3, "fga": 6, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 1 },
+        { "playerId": "p30", "min": 14, "pts": 4, "reb": 1, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 2, "fga": 5, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p31", "min": 14, "pts": 2, "reb": 2, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 3, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p32", "min": 14, "pts": 0, "reb": 3, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 0, "fga": 3, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "week": 2,
+    "date": "2025-01-18",
+    "homeTeam": "disciples",
+    "awayTeam": "kings",
+    "homeScore": 88,
+    "awayScore": 82,
+    "boxScore": {
+      "disciples": [
+        { "playerId": "p9",  "min": 36, "pts": 28, "reb": 5, "ast": 9, "stl": 3, "blk": 1, "to": 3, "fgm": 11, "fga": 20, "tpm": 3, "tpa": 7, "ftm": 3, "fta": 4 },
+        { "playerId": "p10", "min": 30, "pts": 18, "reb": 3, "ast": 3, "stl": 1, "blk": 0, "to": 2, "fgm": 7, "fga": 14, "tpm": 3, "tpa": 6, "ftm": 1, "fta": 1 },
+        { "playerId": "p11", "min": 28, "pts": 14, "reb": 6, "ast": 2, "stl": 1, "blk": 1, "to": 1, "fgm": 6, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p12", "min": 24, "pts": 12, "reb": 8, "ast": 1, "stl": 0, "blk": 2, "to": 2, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 3 },
+        { "playerId": "p13", "min": 22, "pts": 8, "reb": 10, "ast": 1, "stl": 0, "blk": 3, "to": 1, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 },
+        { "playerId": "p14", "min": 14, "pts": 4, "reb": 1, "ast": 2, "stl": 1, "blk": 0, "to": 1, "fgm": 2, "fga": 4, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p15", "min": 14, "pts": 2, "reb": 2, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p16", "min": 12, "pts": 2, "reb": 3, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 3, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ],
+      "kings": [
+        { "playerId": "p41", "min": 34, "pts": 18, "reb": 4, "ast": 8, "stl": 2, "blk": 0, "to": 4, "fgm": 7, "fga": 15, "tpm": 2, "tpa": 6, "ftm": 2, "fta": 2 },
+        { "playerId": "p42", "min": 30, "pts": 22, "reb": 3, "ast": 3, "stl": 1, "blk": 0, "to": 2, "fgm": 9, "fga": 16, "tpm": 3, "tpa": 7, "ftm": 1, "fta": 2 },
+        { "playerId": "p43", "min": 26, "pts": 14, "reb": 6, "ast": 2, "stl": 1, "blk": 1, "to": 1, "fgm": 6, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p44", "min": 24, "pts": 12, "reb": 7, "ast": 1, "stl": 0, "blk": 2, "to": 2, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 3 },
+        { "playerId": "p45", "min": 22, "pts": 8, "reb": 9, "ast": 0, "stl": 0, "blk": 2, "to": 1, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 },
+        { "playerId": "p46", "min": 16, "pts": 6, "reb": 1, "ast": 2, "stl": 1, "blk": 0, "to": 0, "fgm": 3, "fga": 6, "tpm": 0, "tpa": 2, "ftm": 0, "fta": 0 },
+        { "playerId": "p47", "min": 14, "pts": 2, "reb": 3, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p48", "min": 14, "pts": 0, "reb": 2, "ast": 0, "stl": 0, "blk": 0, "to": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "week": 2,
+    "date": "2025-01-18",
+    "homeTeam": "shepherds",
+    "awayTeam": "eagles",
+    "homeScore": 90,
+    "awayScore": 78,
+    "boxScore": {
+      "shepherds": [
+        { "playerId": "p17", "min": 34, "pts": 20, "reb": 5, "ast": 11, "stl": 2, "blk": 0, "to": 2, "fgm": 8, "fga": 15, "tpm": 2, "tpa": 4, "ftm": 2, "fta": 2 },
+        { "playerId": "p18", "min": 30, "pts": 24, "reb": 3, "ast": 3, "stl": 1, "blk": 0, "to": 1, "fgm": 9, "fga": 16, "tpm": 4, "tpa": 7, "ftm": 2, "fta": 3 },
+        { "playerId": "p19", "min": 28, "pts": 18, "reb": 6, "ast": 2, "stl": 1, "blk": 1, "to": 2, "fgm": 8, "fga": 14, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 1 },
+        { "playerId": "p20", "min": 26, "pts": 12, "reb": 10, "ast": 2, "stl": 0, "blk": 2, "to": 1, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 0, "ftm": 2, "fta": 3 },
+        { "playerId": "p21", "min": 24, "pts": 8, "reb": 9, "ast": 1, "stl": 0, "blk": 3, "to": 2, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 1 },
+        { "playerId": "p22", "min": 16, "pts": 6, "reb": 2, "ast": 1, "stl": 1, "blk": 0, "to": 0, "fgm": 3, "fga": 5, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p23", "min": 14, "pts": 2, "reb": 1, "ast": 0, "stl": 0, "blk": 0, "to": 1, "fgm": 1, "fga": 3, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p24", "min": 8,  "pts": 0, "reb": 2, "ast": 0, "stl": 0, "blk": 1, "to": 0, "fgm": 0, "fga": 1, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ],
+      "eagles": [
+        { "playerId": "p33", "min": 32, "pts": 16, "reb": 4, "ast": 7, "stl": 2, "blk": 0, "to": 3, "fgm": 6, "fga": 13, "tpm": 2, "tpa": 5, "ftm": 2, "fta": 3 },
+        { "playerId": "p34", "min": 28, "pts": 18, "reb": 3, "ast": 2, "stl": 1, "blk": 0, "to": 2, "fgm": 7, "fga": 15, "tpm": 3, "tpa": 8, "ftm": 1, "fta": 1 },
+        { "playerId": "p35", "min": 26, "pts": 14, "reb": 6, "ast": 2, "stl": 0, "blk": 1, "to": 1, "fgm": 6, "fga": 12, "tpm": 1, "tpa": 3, "ftm": 1, "fta": 2 },
+        { "playerId": "p36", "min": 24, "pts": 12, "reb": 7, "ast": 1, "stl": 0, "blk": 1, "to": 2, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 1, "ftm": 2, "fta": 3 },
+        { "playerId": "p37", "min": 22, "pts": 10, "reb": 8, "ast": 1, "stl": 0, "blk": 2, "to": 1, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 0, "ftm": 2, "fta": 2 },
+        { "playerId": "p38", "min": 16, "pts": 4, "reb": 1, "ast": 2, "stl": 1, "blk": 0, "to": 1, "fgm": 2, "fga": 5, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p39", "min": 14, "pts": 4, "reb": 2, "ast": 1, "stl": 0, "blk": 0, "to": 0, "fgm": 2, "fga": 4, "tpm": 0, "tpa": 1, "ftm": 0, "fta": 0 },
+        { "playerId": "p40", "min": 18, "pts": 0, "reb": 5, "ast": 0, "stl": 0, "blk": 1, "to": 1, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0, "ftm": 0, "fta": 0 }
+      ]
+    }
+  }
+]
