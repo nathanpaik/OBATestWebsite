@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos - OBA</title>
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body class="checkerboard-bg">
+  <nav class="site-nav" id="site-nav"></nav>
+
+  <main class="container">
+    <h1 class="section-title">Photo Gallery</h1>
+    <div id="photos-content">
+      <p class="loading">Loading photos...</p>
+    </div>
+  </main>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" onclick="if(event.target===this)this.classList.remove('open')">
+    <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/data.js?v=3"></script>
+  <script src="js/photos.js"></script>
+</body>
+</html>

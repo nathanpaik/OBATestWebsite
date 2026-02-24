@@ -29,6 +29,11 @@ const OBA = {
     return this.fetchJSON(`data/seasons/${season}/awards.json`);
   },
 
+  async getPhotos(season) {
+    season = season || this.currentSeason;
+    return this.fetchJSON(`data/seasons/${season}/photos.json`);
+  },
+
   async getTeam(teamId) {
     const teams = await this.getTeams();
     return teams.find(t => t.id === teamId);
@@ -108,6 +113,7 @@ const OBA = {
       { href: 'schedule.html', label: 'Schedule', id: 'schedule' },
       { href: 'teams.html', label: 'Teams', id: 'teams' },
       { href: 'awards.html', label: 'Awards', id: 'awards' },
+      { href: 'photos.html', label: 'Photos', id: 'photos' },
     ];
     const nav = document.getElementById('site-nav');
     if (!nav) return;
