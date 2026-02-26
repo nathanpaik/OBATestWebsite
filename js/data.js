@@ -119,7 +119,7 @@ const OBA = {
     if (!nav) return;
     nav.innerHTML = `
       <div class="nav-inner">
-        <a href="index.html" class="nav-logo">OBA</a>
+        <a href="index.html" class="nav-logo"><img src="images/OBALogo.png" alt="OBA" class="nav-logo-img">OBA</a>
         <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
         <ul class="nav-links">
           ${links.map(l => `<li><a href="${l.href}" class="${activePage === l.id ? 'active' : ''}">${l.label}</a></li>`).join('')}
