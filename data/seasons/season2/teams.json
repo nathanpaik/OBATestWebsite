@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nathan",
+    "name": "Team Nathan",
+    "color": "#1E3A8A",
+    "colorSecondary": "#93C5FD"
+  },
+  {
+    "id": "aron",
+    "name": "Team Aron",
+    "color": "#7C3AED",
+    "colorSecondary": "#DDD6FE"
+  },
+  {
+    "id": "pjo",
+    "name": "Team PJo",
+    "color": "#B45309",
+    "colorSecondary": "#FDE68A"
+  },
+  {
+    "id": "matt",
+    "name": "Team Matt",
+    "color": "#047857",
+    "colorSecondary": "#A7F3D0"
+  },
+  {
+    "id": "sean",
+    "name": "Team Sean",
+    "color": "#DC2626",
+    "colorSecondary": "#FCA5A5"
+  }
+]

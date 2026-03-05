@@ -1,6 +1,8 @@
 // OBA Data Loading Utilities
 const OBA = {
-  currentSeason: 'season2',
+  seasons: ['season1', 'season2'],
+  seasonLabels: { season1: 'Season 1', season2: 'Season 2' },
+  currentSeason: localStorage.getItem('obaSeason') || 'season2',
   cache: {},
 
   async fetchJSON(path) {
@@ -11,12 +13,14 @@ const OBA = {
     return data;
   },
 
-  async getTeams() {
-    return this.fetchJSON('data/teams.json');
+  async getTeams(season) {
+    season = season || this.currentSeason;
+    return this.fetchJSON(`data/seasons/${season}/teams.json`);
   },
 
-  async getPlayers() {
-    return this.fetchJSON('data/players.json');
+  async getPlayers(season) {
+    season = season || this.currentSeason;
+    return this.fetchJSON(`data/seasons/${season}/players.json`);
   },
 
   async getGames(season) {
@@ -117,15 +121,29 @@ const OBA = {
     ];
     const nav = document.getElementById('site-nav');
     if (!nav) return;
+    const seasonOptions = this.seasons.map(s =>
+      `<option value="${s}" ${s === this.currentSeason ? 'selected' : ''}>${this.seasonLabels[s]}</option>`
+    ).join('');
     nav.innerHTML = `
       <div class="nav-inner">
         <a href="index.html" class="nav-logo"><img src="images/OBALogo.png" alt="OBA" class="nav-logo-img">OBA</a>
         <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
         <ul class="nav-links">
           ${links.map(l => `<li><a href="${l.href}" class="${activePage === l.id ? 'active' : ''}">${l.label}</a></li>`).join('')}
+          <li class="season-selector">
+            <select id="season-select" onchange="OBA.switchSeason(this.value)">
+              ${seasonOptions}
+            </select>
+          </li>
         </ul>
       </div>
     `;
+  },
+
+  switchSeason(season) {
+    localStorage.setItem('obaSeason', season);
+    // Go to index page when switching seasons (team/player/game IDs may not exist across seasons)
+    window.location.href = 'index.html';
   },
 
   renderFooter() {

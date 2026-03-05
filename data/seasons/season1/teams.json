@@ -1,0 +1,7 @@
+[
+  { "id": "sam", "name": "Team Sam", "color": "#0D9488", "colorSecondary": "#99F6E4" },
+  { "id": "jon", "name": "Team Jon", "color": "#D97706", "colorSecondary": "#FCD34D" },
+  { "id": "pjo", "name": "Team PJo", "color": "#B45309", "colorSecondary": "#FDE68A" },
+  { "id": "aron", "name": "Team Aron", "color": "#7C3AED", "colorSecondary": "#DDD6FE" },
+  { "id": "nathan", "name": "Team Nathan", "color": "#1E3A8A", "colorSecondary": "#93C5FD" }
+]
